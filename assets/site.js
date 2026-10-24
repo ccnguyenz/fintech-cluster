@@ -30,8 +30,6 @@ const SITE = {
     { label: "Publications",href: "publications.html" },
     { label: "Research",    href: "research.html" },
     { label: "Seminars",    href: "seminars.html" },
-    { label: "News",        href: "news.html" },
-    { label: "Analytics",   href: "analytics.html" },
   ],
 };
 
