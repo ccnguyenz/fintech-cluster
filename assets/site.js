@@ -5,7 +5,7 @@
    ============================================================ */
 
 const SITE = {
-  brandTop:  "FinTech & Digital Assets",
+  brandTop:  "Financial Innovation & Digital Assets",
   brandSub:  "Research Cluster",
   email:     "fintech.cluster@lincoln.ac.nz",
   scholar:   "https://scholar.google.com",
@@ -17,7 +17,7 @@ const SITE = {
   // 2. Put that code here. Leave "" to DISABLE all visitor tracking.
   //    Example: if your dashboard is https://fintech-cluster.goatcounter.com
   //    then goatcounterCode = "fintech-cluster".
-  goatcounterCode: "fintech-cluster",   // <-- e.g. "fintech-cluster"
+  goatcounterCode: "",   // <-- e.g. "fintech-cluster"
   // 3. In GoatCounter: Settings → "Allow public access to the dashboard"
   //    so the Analytics page can embed your live stats.
 
@@ -82,7 +82,7 @@ function renderFooter(){
   f.innerHTML = `
     <div class="footer-inner">
       <div class="footer-col lede">
-        <strong>RESEARCH CLUSTER ON FINTECH &amp; DIGITAL ASSETS</strong>
+        <strong> THE NEW ZEALAND RESEARCH CLUSTER ON FINANACIAL INNOVATION &amp; DIGITAL ASSETS</strong>
         A multidisciplinary research community studying the economics, finance,
         regulation, and technology of digital assets, decentralised finance,
         and the future of money.
@@ -100,12 +100,6 @@ function renderFooter(){
         Assoc. Prof. Cuong Nguyen<br/>
         <a href="mailto:${SITE.email}">${SITE.email}</a><br/>
         <span style="opacity:.7">© ${new Date().getFullYear()} · CC BY 4.0</span>
-      </div>
-      <div class="footer-col">
-      <strong>VISITORS</strong>
-      <a href="https://info.flagcounter.com/Rjuf">
-      <img src="https://s05.flagcounter.com/count2/Rjuf/bg_FFFFFF/txt_1A4F8A/border_1A4F8A/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
-      </a>
       </div>
     </div>`;
   document.body.appendChild(f);
