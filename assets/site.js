@@ -5,21 +5,28 @@
    ============================================================ */
 
 const SITE = {
-  brandTop:  "Financial Innovation & Digital Assets",
-  brandSub:  "Research Cluster",
-  email:     "fintech.cluster@lincoln.ac.nz",
-  scholar:   "https://scholar.google.com",
+  brandTop: "Financial Innovation & Digital Assets",
+  brandSub: "Research Cluster",
+  email: "fintech.cluster@lincoln.ac.nz",
+  scholar: "https://scholar.google.com",
   journalUrl:"https://journals.lincoln.ac.nz/index.php/JFDA",
   journalLinkedIn:"https://www.linkedin.com/company/the-journal-of-fintech-and-digital-assets/",
 
   // ── ANALYTICS (GoatCounter) ──────────────────────────────
-  // 1. Sign up free at https://www.goatcounter.com/ and pick a code (subdomain).
-  // 2. Put that code here. Leave "" to DISABLE all visitor tracking.
-  //    Example: if your dashboard is https://fintech-cluster.goatcounter.com
-  //    then goatcounterCode = "fintech-cluster".
+  //  1. Sign up free at https://www.goatcounter.com/ and pick a code (subdomain).
+  //  2. Put that code here. Leave "" to DISABLE all visitor tracking.
+  //     Example: if your dashboard is https://fintech-cluster.goatcounter.com
+  //     then goatcounterCode = "fintech-cluster".
   goatcounterCode: "fintech-cluster-cc",   // <-- e.g. "fintech-cluster"
-  // 3. In GoatCounter: Settings → "Allow public access to the dashboard"
-  //    so the Analytics page can embed your live stats.
+  //  3. In GoatCounter: Settings → "Allow public access to the dashboard"
+  //     so the Analytics page can embed your live stats.
+
+  // ── FLAG COUNTER (visitor flags in the footer) ───────────
+  //  1. Create a free counter at https://flagcounter.com/ (use "Customize").
+  //  2. Copy the short code from the HTML it gives you. It is the 4-letter
+  //     part in the address: https://info.flagcounter.com/XXXX
+  //  3. Paste it below. Leave "" to HIDE the flag counter.
+  flagCounterCode: "xcWa",                     // <-- e.g. "ab12"
 
   // Navigation tabs — order shown left to right.
   nav: [
@@ -76,11 +83,20 @@ function renderNavbar(){
 }
 
 function renderFooter(){
+  // Flag counter column — only shown when SITE.flagCounterCode is set.
+  const flagCounter = SITE.flagCounterCode ? `
+      <div class="footer-col">
+        <strong>VISITORS</strong>
+        <a href="https://info.flagcounter.com/${SITE.flagCounterCode}">
+          <img src="https://s05.flagcounter.com/count2/${SITE.flagCounterCode}/bg_FFFFFF/txt_1A4F8A/border_1A4F8A/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
+        </a>
+      </div>` : "";
+
   const f = document.createElement("footer");
   f.innerHTML = `
     <div class="footer-inner">
       <div class="footer-col lede">
-        <strong> THE NEW ZEALAND RESEARCH CLUSTER ON FINANACIAL INNOVATION &amp; DIGITAL ASSETS</strong>
+        <strong>THE NEW ZEALAND RESEARCH CLUSTER ON FINANCIAL INNOVATION &amp; DIGITAL ASSETS</strong>
         A multidisciplinary research community studying the economics, finance,
         regulation, and technology of digital assets, decentralised finance,
         and the future of money.
@@ -90,8 +106,7 @@ function renderFooter(){
         <a href="journal.html">The Journal of FinTech &amp; Digital Assets</a><br/>
         <a href="publications.html">Publications</a><br/>
         <a href="seminars.html">Seminars</a> ·
-        <a href="indices.html">Live indices</a><br/>
-        <a href="analytics.html">Analytics</a>
+        <a href="indices.html">Live indices</a>
       </div>
       <div class="footer-col">
         <strong>CONTACT</strong>
@@ -99,6 +114,7 @@ function renderFooter(){
         <a href="mailto:${SITE.email}">${SITE.email}</a><br/>
         <span style="opacity:.7">© ${new Date().getFullYear()} · CC BY 4.0</span>
       </div>
+      ${flagCounter}
     </div>`;
   document.body.appendChild(f);
 }
