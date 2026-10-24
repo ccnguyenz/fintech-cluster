@@ -5,7 +5,7 @@
    ============================================================ */
 
 const SITE = {
-  brandTop:  "FinTech & Digital Assets",
+  brandTop:  "Financial Innovation & Digital Assets",
   brandSub:  "Research Cluster",
   email:     "fintech.cluster@lincoln.ac.nz",
   scholar:   "https://scholar.google.com",
@@ -82,7 +82,7 @@ function renderFooter(){
   f.innerHTML = `
     <div class="footer-inner">
       <div class="footer-col lede">
-        <strong>RESEARCH CLUSTER ON FINTECH &amp; DIGITAL ASSETS</strong>
+        <strong> THE NEW ZEALAND RESEARCH CLUSTER ON FINANACIAL INNOVATION &amp; DIGITAL ASSETS</strong>
         A multidisciplinary research community studying the economics, finance,
         regulation, and technology of digital assets, decentralised finance,
         and the future of money.
