@@ -7,7 +7,7 @@
 const SITE = {
   brandTop: "Financial Innovation & Digital Assets",
   brandSub: "Research Cluster",
-  email: "fintech.cluster@lincoln.ac.nz",
+  email: "Cuong.Nguyen@lincoln.ac.nz",
   scholar: "https://scholar.google.com",
   journalUrl:"https://journals.lincoln.ac.nz/index.php/JFDA",
   journalLinkedIn:"https://www.linkedin.com/company/the-journal-of-fintech-and-digital-assets/",
@@ -98,7 +98,7 @@ function renderFooter(){
       <div class="footer-col lede">
         <strong>THE NEW ZEALAND RESEARCH CLUSTER ON FINANCIAL INNOVATION &amp; DIGITAL ASSETS</strong>
         A multidisciplinary research community studying the economics, finance,
-        regulation, and technology of digital assets, decentralised finance,
+        regulation, and technology of digital assets, decentralised finance, artificial intelligence
         and the future of money.
       </div>
       <div class="footer-col">
