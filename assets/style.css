@@ -217,3 +217,41 @@ ul.clean li:last-child{border:none}
 .btn-outline{background:transparent;border:1.5px solid var(--accent);color:var(--accent)}
 .btn-outline:hover{background:var(--accent);color:#fff}
 .btn-row{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1rem}
+
+
+.commitments-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.commitment-card {
+  background: #f8f9fa;
+  border-left: 4px solid #0066cc; /* Change color to match your brand */
+  padding: 1.25rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.commitment-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.commitment-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  color: #2c3e50;
+}
+
+.commitment-card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+
+
