@@ -253,5 +253,36 @@ ul.clean li:last-child{border:none}
   line-height: 1.5;
 }
 
+/* Effect for Financial Innovation & Digital Assets */
+.hero-bg-title {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
 
+.hero-bg-title:hover {
+  background-color: rgba(255, 255, 255, 0.12); /* Translucent pill background */
+  transform: translateY(-4px); /* Lifts upward */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25); /* Glow shadow */
+}
+
+
+/* Styling for the target text */
+.pill-highlight {
+  display: inline-block;
+  padding: 6px 20px;
+  border-radius: 50px;
+  background-color: transparent;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+/* Emerges into a glowing pill on hover */
+.pill-highlight:hover {
+  background-color: rgba(255, 255, 255, 0.15); /* Soft translucent background */
+  transform: translateY(-4px) scale(1.02);      /* Smooth upward lift */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);    /* Soft shadow underneath */
+  backdrop-filter: blur(4px);                    /* Modern glass effect */
+}
 
