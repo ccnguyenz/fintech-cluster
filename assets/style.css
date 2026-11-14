@@ -115,6 +115,7 @@ p.body{color:var(--ink2);margin-bottom:1rem;max-width:780px}
 .b-working{background:#fbf2e3;color:var(--amber)}
 .b-conf{background:#e8f5ee;color:var(--green)}
 .b-chapter{background:#f4ecf9;color:var(--purple)}
+.b-data{background:#eef3f1;color:var(--teal,#2f6f66)}
 .pub-title{font-family:var(--serif);font-size:1.12rem;font-weight:600;line-height:1.4;margin-bottom:.3rem}
 .pub-title a{color:var(--ink);text-decoration:none}
 .pub-title a:hover{color:var(--accent)}
